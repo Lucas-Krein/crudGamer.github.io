@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="download.png">
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+    <title>Cadastrar Perfil</title>
+</head>
+<body class="fundolario">
+    <div class="cabecalhorario">
+        <h1><p>
+            <a href="/listar">Perfil</a href>
+            <a href="/"> Home</a href>   
+        </p></h1>
+   </div>
+    <h2><div class="formulario" style=color:aquamarine>
+        <form action="/adicionar" method="POST" enctype="multipart/form-data">
+        <h1> Cadastrar Perfil</h1>
+        <label for="nick">Informe um nickname:</label>
+        <input type="text" id="nick" name="nick" required placeholder="Digite seu nickname"><br>
+        <br>
+        <label for="usuario">Informe seu e-mail:</label>
+        <input type="email" id="usuario" name="usuario" placeholder="Digite seu email" required><br>
+        <br>
+        <label for="senha">Senha:<br></label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+        <br>
+        <label for="cidade">Cidade:<br></label>
+        <input type="text" id="cidade" name="cidade" required><br>
+        <br>
+        <label for="estado">Estado:<br></label>
+        <input type="text" id="estado" name="estado" required><br>
+        <br>
+        <label for="pais">País:<br></label>
+        <input type="text" id="pais" name="pais" required><br>
+        <br>
+        <label for="bio">Sua mensagem ao mundo:<br></label>
+        <textarea name="bio" id="bio" placeholder="Olá mundo..." required></textarea><br>
+        <br>
+        <label for="imagem_path">Imagem de Perfil:</label>
+        <input type="file" id="imagem_path" name="imagem_path" accept="image/*"><br>
+        <br>
+        <form class="cadastro">
+        <input type="submit" value="Adicionar">
+        </form> 
+    </div></h2>
+</body>
+</html>
