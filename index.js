@@ -135,7 +135,7 @@ app.get('/listar', function (req, res) {
     })
 });
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/Index.html")
 });
 app.get("/deletar/:cod_jogador", function (req, res) {
     const codigoDoJogador = req.params.cod_jogador;
