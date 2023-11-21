@@ -135,23 +135,7 @@ app.get('/listar', function (req, res) {
     })
 });
 app.get("/", function (req, res) {
-    res.send(`
-    <html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="download.png">    
-        <title> Salão Principal </title>
-        <link rel="stylesheet" type="text/css" href="/estilo.css">
-    </head>
-    <body class="fundo">
-       <div>
-            <h1><p>
-                <a href="/listar">Perfil</a href>
-                <a href="/formulario">Cadastrar Perfil</a href>
-            </p></h1>
-       </div>
-    </body>
-    </html>
-    `)
+    res.sendFile(__dirname + "/index.html")
 });
 app.get("/deletar/:cod_jogador", function (req, res) {
     const codigoDoJogador = req.params.cod_jogador;
@@ -191,7 +175,7 @@ app.get("/atualizar-form/:cod_jogador", function (req, res) {
                 <div class="cabecalhoeditar">
                     <h1><p>
                         <a href="/listar">Perfil</a href>
-                        <a href="/"> Home</a href>   
+                        <a href="https://lucas-krein.github.io/crudGamer.github.io/"> Home</a href>   
                     </p></h1>
                 </div>
                 
